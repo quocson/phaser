@@ -567,11 +567,11 @@ Phaser.Pointer.prototype = {
         //  to initiate a right-click event, so we'll check for that here ONLY if
         //  event.buttons = 1 (i.e. they only have a 1 button mouse or trackpad)
 
-        if (event.buttons === 1 && event.ctrlKey && this.leftButton.isDown)
-        {
-            this.leftButton.stop(event);
-            this.rightButton.start(event);
-        }
+        //         if (event.buttons === 1 && event.ctrlKey && this.leftButton.isDown)
+        //         {
+        //             this.leftButton.stop(event);
+        //             this.rightButton.start(event);
+        //         }
 
         this.isUp = true;
         this.isDown = false;
